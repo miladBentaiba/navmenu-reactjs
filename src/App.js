@@ -5,9 +5,9 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 export default function App() {
   return (
     <BrowserRouter>
-      <Link to="/">Home</Link>&nbsp;
-      <Link to="/about">About</Link>&nbsp;
-      <Link to="/topics">Topics</Link>&nbsp;
+      <Link visitedClassName='is-active' to="/">Home</Link>&nbsp;
+      <Link visitedClassName='is-active' to="/about">About</Link>&nbsp;
+      <Link visitedClassName='is-active' to="/topics">Topics</Link>&nbsp;
       <hr />
       <Route exact path="/" render={() => (<Home text='Home' />)} />
       <Route path="/about" render={() => (<Home text='About' />)} />
